@@ -1,18 +1,17 @@
-Executive Summart:
+**Executive Summary:**
 Zipco Foods is a vibrant and growing business that specializes in the sales of pizzas and cakes. As a key player in the fast-casual dining industry, Zipco Foods operates numerous outlets across the country, serving a wide variety of pizzas and cakes that cater to local tastes and preferences. With a strong commitment to customer satisfaction and quality service, Zipco Foods aims to leverage advanced data engineering solutions to enhance operational efficiency, improve product offerings, and ultimately boost profitability.
 
-Problem:
+**Problem:**
 Zipco Foods generates a significant amount of sales data daily, which is currently underutilized due to inefficient data handling and analysis processes. The primary challenge is the disparate nature of data collection and storage, with critical sales and inventory information scattered across multiple CSV files without a unified system for aggregation and analysis. This fragmentation leads to operational inefficiencies, including delays in data access, difficulty in obtaining real-time insights, and challenges in maintaining data integrity and accuracy.
 
-Tech Stack:
+**Tech Stack:**
 Python: Utilized for scripting the ETL processes, data cleaning, transformation, and analysis tasks due to its powerful libraries like pandas and NumPy.
 SQL: Employed for querying, updating, and managing the database stored in Azure, ensuring efficient data manipulation and retrieval.
 Azure Blob Storage: Chosen for its scalability and reliability, serving as the centralized data repository for storing processed data.
 Github: Used for version control, allowing for collaborative development and maintenance of the ETL scripts and other project documents.
 Apache Airflow: Orchestrates the ETL processes, scheduling jobs efficiently and monitoring the workflow of data through various stages of the pipeline.
 
-
-Scope:
+**Scope:**
 Data Extraction
 Extract data from various CSV files into a Pandas DataFrame. This step involves reading large datasets efficiently, handling different data formats, and managing incomplete or corrupt data files.
 
