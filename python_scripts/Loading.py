@@ -8,11 +8,11 @@ import os
 load_dotenv()
 
 def loading():
-    data = pd.read_csv(r'clean_data.csv')
-    products = pd.read_csv(r'products.csv')
-    customers = pd.read_csv(r'customers.csv')
-    staff = pd.read_csv(r'staff.csv')
-    fact = pd.read_csv(r'fact.csv')
+    data = pd.read_csv(r'home/oris/airflow/zipco_dag/clean_data.csv')
+    products = pd.read_csv(r'home/oris/airflow/zipco_dag/products.csv')
+    customers = pd.read_csv(r'home/oris/airflow/zipco_dag/customers.csv')
+    staff = pd.read_csv(r'home/oris/airflow/zipco_dag/staff.csv')
+    fact = pd.read_csv(r'home/oris/airflow/zipco_dag/fact.csv')
     
     # Create a BlobServiceClient object
     connect_str= os.getenv('AZURE_CONNECTION_STRING')

@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def transformation():
-    data = pd.read_csv(r'zipco_transaction.csv')
+    data = pd.read_csv(r'home/oris/airflow/zipco_dag/zipco_transaction.csv')
 
     #Changing data datatype
 
@@ -49,10 +49,10 @@ def transformation():
         'OrderType','DayOfWeek','TotalSales']]
     
    #saving into csvfile
-    data.to_csv('clean_data.csv', index=False)
-    products.to_csv('products.csv', index=False)
-    customers.to_csv('customers.csv', index=False)
-    staff.to_csv('staff.csv', index=False)
-    fact.to_csv('fact.csv', index=False)
+    data.to_csv('home/oris/airflow/zipco_dag/clean_data.csv', index=False)
+    products.to_csv('home/oris/airflow/zipco_dag/products.csv', index=False)
+    customers.to_csv('home/oris/airflow/zipco_dag/customers.csv', index=False)
+    staff.to_csv('home/oris/airflow/zipco_dag/staff.csv', index=False)
+    fact.to_csv('home/oris/airflow/zipco_dag/fact.csv', index=False)
     print('Normalised data saved successfully!')
 
