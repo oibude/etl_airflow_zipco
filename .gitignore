@@ -1,5 +1,6 @@
 #Files to ignore
 .env
+Apache Airflow Case study.pptx
 
 #Folder to be ignored
 zipco_env
